@@ -50,12 +50,14 @@
     - [ ] Create sql table structure in SQLite GUI tool
         - [ ] Create table `Dogs`
             - > `CREATE TABLE Dogs (` <br> `    primaryKey  NUMERIC PRIMARY KEY NOT NULL,` <br> `   dogName     STRING  NOT NULL,` <br> `  dogAge      STRING  NOT NULL,` <br> ` isAvailable BOOLEAN NOT NULL` <br> `);`
-            - > [Photo](https://imgur.com/a/LzZQmCE "Photo of table in SQLite GUI") of table dogs in GUI
+            - > [Photo](https://imgur.com/a/LzZQmCE "Photo of table in SQLite GUI") of table `dogs` in GUI
         - [ ] Create table `Clients`
             - > `CREATE TABLE Clients (` <br> `primaryKey NUMERIC PRIMARY KEY NOT NULL,` <br> `name       STRING  NOT NULL,` <br> `name       STRING  NOT NULL,` <br> `adress     STRING  NOT NULL` <br> `);`
-            - > [Photo](https://imgur.com/a/yQMfBet "Photo of table in SQLite GUI") of table clients in GUI
+            - > [Photo](https://imgur.com/a/yQMfBet "Photo of table in SQLite GUI") of table `clients` in GUI
         - [ ] Create table `Orders`
-            - > 
+            - > `CREATE TABLE Orders (` <br> `primaryKey NUMERIC PRIMARY KEY NOT NULL,` <br> `dogsRef    NUMERIC REFERENCES Dogs (primaryKey),` <br> `clientsRef NUMERIC REFERENCES Clients (primaryKey)` <br> `);`
+            - > [Photo](https://imgur.com/a/YebirZJ "Photo of table in SQLite GUI") of table `orders` in GUI
+        
     - [ ] Validating the correct display od tables in Rider
 2. [ ] Entity Framework
 3. [ ] Environment
