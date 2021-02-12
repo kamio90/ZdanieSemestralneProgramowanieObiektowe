@@ -70,6 +70,8 @@
         - [ ] Change primaryKey to autoincrement
             - [ ] Table `magazine`
                 - > `PRAGMA foreign_keys = 0;` <br><br> `CREATE TABLE sqlitestudio_temp_table AS SELECT * FROM Magazine;` <br><br> `DROP TABLE Magazine;` <br><br> `CREATE TABLE Magazine (` <br> `primaryKey   INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,` <br> `foodRef      NUMERIC REFERENCES Food (primaryKey),` <br> `volunteerRef NUMERIC REFERENCES Volunteer (primaryKey) ` <br> `);` <br><br> `INSERT INTO Magazine (` <br> `primaryKey,` <br> ` foodRef,` <br> `volunteerRef` <br> `)` <br> ` SELECT primaryKey,` <br> `foodRef,` <br> `volunteerRef` <br> ` FROM sqlitestudio_temp_table;` <br><br> `DROP TABLE sqlitestudio_temp_table;` <br><br> `PRAGMA foreign_keys = 1;`
+            - [ ] Table `orders`
+                - > `PRAGMA foreign_keys = 0;` <br><br> `CREATE TABLE sqlitestudio_temp_table AS SELECT * FROM Orders;` <br><br> `DROP TABLE Orders;` <br><br> `CREATE TABLE Orders (` <br> `primaryKey INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,` <br> `dogsRef    NUMERIC REFERENCES Dogs (primaryKey),` <br> `clientsRef NUMERIC REFERENCES Clients (primaryKey)` <br> `);` <br><br> `INSERT INTO Orders (` <br> ` primaryKey,` <br> `dogsRef,` <br> `clientsRef` <br> `)` <br> `SELECT primaryKey,` <br> `dogsRef,` <br> `clientsRef` <br> ` FROM sqlitestudio_temp_table;` <br><br> `DROP TABLE sqlitestudio_temp_table;` <br> `PRAGMA foreign_keys = 1;`
     - [ ] Validating the correct display od tables in Rider
 2. [ ] Entity Framework
 3. [ ] Environment
