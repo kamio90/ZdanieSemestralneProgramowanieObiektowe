@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.ZdanieSemestralneProgramowanieObiektowe.iml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\kamio90\Documents\Rider\ZdanieSemestralneProgramowanieObiektowe\.idea\.idea.ZdanieSemestralneProgramowanieObiektowe\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
