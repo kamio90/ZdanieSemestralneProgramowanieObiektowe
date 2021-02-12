@@ -67,14 +67,15 @@
             - > `CREATE TABLE Magazine (` <br> `primaryKey   NUMERIC PRIMARY KEY NOT NULL,` <br> `foodRef      NUMERIC REFERENCES Food (primaryKey),` <br> `volunteerRef NUMERIC REFERENCES Volunteer (primaryKey)` <br> `);`
             - > [Photo](https://imgur.com/a/y5B7ieL "Photo of table in SQLite GUI") of table `magazine` in GUI
     - [ ] Testing usability of database
-        - [ ] Change primaryKey to autoincrement
+        - [ ] Change `primaryKey` to autoincrement and integer
             - [ ] Table `magazine`
                 - > `PRAGMA foreign_keys = 0;` <br><br> `CREATE TABLE sqlitestudio_temp_table AS SELECT * FROM Magazine;` <br><br> `DROP TABLE Magazine;` <br><br> `CREATE TABLE Magazine (` <br> `primaryKey   INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,` <br> `foodRef      NUMERIC REFERENCES Food (primaryKey),` <br> `volunteerRef NUMERIC REFERENCES Volunteer (primaryKey) ` <br> `);` <br><br> `INSERT INTO Magazine (` <br> `primaryKey,` <br> ` foodRef,` <br> `volunteerRef` <br> `)` <br> ` SELECT primaryKey,` <br> `foodRef,` <br> `volunteerRef` <br> ` FROM sqlitestudio_temp_table;` <br><br> `DROP TABLE sqlitestudio_temp_table;` <br><br> `PRAGMA foreign_keys = 1;`
             - [ ] Table `orders`
                 - > `PRAGMA foreign_keys = 0;` <br><br> `CREATE TABLE sqlitestudio_temp_table AS SELECT * FROM Orders;` <br><br> `DROP TABLE Orders;` <br><br> `CREATE TABLE Orders (` <br> `primaryKey INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,` <br> `dogsRef    NUMERIC REFERENCES Dogs (primaryKey),` <br> `clientsRef NUMERIC REFERENCES Clients (primaryKey)` <br> `);` <br><br> `INSERT INTO Orders (` <br> ` primaryKey,` <br> `dogsRef,` <br> `clientsRef` <br> `)` <br> `SELECT primaryKey,` <br> `dogsRef,` <br> `clientsRef` <br> ` FROM sqlitestudio_temp_table;` <br><br> `DROP TABLE sqlitestudio_temp_table;` <br> `PRAGMA foreign_keys = 1;`
             - [ ] Table `volunteer`
                 - > `PRAGMA foreign_keys = 0;` <br><br> `CREATE TABLE sqlitestudio_temp_table AS SELECT * FROM Volunteer;` <br><br> `DROP TABLE Volunteer;` <br><br> `CREATE TABLE Volunteer (` <br> `primaryKey INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,` <br> `name       STRING  NOT NULL,` <br> `surname    STRING  NOT NULL,` <br> `isFavorite BOOLEAN NOT NULL` <br> `);` <br><br> `INSERT INTO Volunteer (` <br> `primaryKey,` <br> `name,` <br> `surname,` <br> `isFavorite` <br> `)` <br> `SELECT primaryKey,` <br> `name,` <br> `surname,` <br> `isFavorite` <br> `FROM sqlitestudio_temp_table;` <br> <br> `DROP TABLE sqlitestudio_temp_table;` <br> `PRAGMA foreign_keys = 1;`
-            
+            - [ ] Table `Food`
+                - > `PRAGMA foreign_keys = 0;` <br><br> `CREATE TABLE sqlitestudio_temp_table AS SELECT * FROM Food;` <br><br> `DROP TABLE Food;` <br><br> `CREATE TABLE Food (` <br> `primaryKey INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,` <br> `count      STRING  NOT NULL,` <br> `name       STRING  NOT NULL` <br> `);` <br><br> `INSERT INTO Food (` <br> ` primaryKey,` <br> `count,` <br> `name` <br> `)` <br> `SELECT primaryKey,` <br> `count,` <br> `name` <br> `FROM sqlitestudio_temp_table;` <br><br> `DROP TABLE sqlitestudio_temp_table;` <br><br> `PRAGMA foreign_keys = 1;`
     - [ ] Validating the correct display od tables in Rider
 2. [ ] Entity Framework
 3. [ ] Environment
