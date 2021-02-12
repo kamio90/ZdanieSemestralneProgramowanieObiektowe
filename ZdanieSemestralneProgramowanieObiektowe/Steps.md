@@ -66,7 +66,10 @@
         - [ ] Create table `Magazine`
             - > `CREATE TABLE Magazine (` <br> `primaryKey   NUMERIC PRIMARY KEY NOT NULL,` <br> `foodRef      NUMERIC REFERENCES Food (primaryKey),` <br> `volunteerRef NUMERIC REFERENCES Volunteer (primaryKey)` <br> `);`
             - > [Photo](https://imgur.com/a/y5B7ieL "Photo of table in SQLite GUI") of table `magazine` in GUI
-    
+    - [ ] Testing usability of database
+        - [ ] Change primaryKey to autoincrement
+            - [ ] Table `magazine`
+                - > `PRAGMA foreign_keys = 0;` <br><br> `CREATE TABLE sqlitestudio_temp_table AS SELECT * FROM Magazine;` <br><br> `DROP TABLE Magazine;` <br><br> `CREATE TABLE Magazine (` <br> `primaryKey   INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,` <br> `foodRef      NUMERIC REFERENCES Food (primaryKey),` <br> `volunteerRef NUMERIC REFERENCES Volunteer (primaryKey) ` <br> `);` <br><br> `INSERT INTO Magazine (` <br> `primaryKey,` <br> ` foodRef,` <br> `volunteerRef` <br> `)` <br> ` SELECT primaryKey,` <br> `foodRef,` <br> `volunteerRef` <br> ` FROM sqlitestudio_temp_table;` <br><br> `DROP TABLE sqlitestudio_temp_table;` <br><br> `PRAGMA foreign_keys = 1;`
     - [ ] Validating the correct display od tables in Rider
 2. [ ] Entity Framework
 3. [ ] Environment
