@@ -63,8 +63,10 @@
         - [ ] Create table `Volunteer`
             - > `CREATE TABLE Volunteer (` <br> `primaryKey NUMERIC PRIMARY KEY NOT NULL,` <br> `name       STRING  NOT NULL,` <br> `surname    STRING  NOT NULL,` <br> `isFavorite BOOLEAN NOT NULL` <br> `);`
             - > [Photo](https://imgur.com/a/cNaFXef "Photo of table in SQLite GUI") of table `Volunteer` in GUI
-        
-            
+        - [ ] Create table `Magazine`
+            - > `CREATE TABLE Magazine (` <br> `primaryKey   NUMERIC PRIMARY KEY NOT NULL,` <br> `foodRef      NUMERIC REFERENCES Food (primaryKey),` <br> `volunteerRef NUMERIC REFERENCES Volunteer (primaryKey)` <br> `);`
+            - > [Photo](https://imgur.com/a/y5B7ieL "Photo of table in SQLite GUI") of table `magazine` in GUI
+    
     - [ ] Validating the correct display od tables in Rider
 2. [ ] Entity Framework
 3. [ ] Environment
