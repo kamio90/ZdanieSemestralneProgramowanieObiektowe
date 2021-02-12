@@ -57,6 +57,9 @@
         - [ ] Create table `Orders`
             - > `CREATE TABLE Orders (` <br> `primaryKey NUMERIC PRIMARY KEY NOT NULL,` <br> `dogsRef    NUMERIC REFERENCES Dogs (primaryKey),` <br> `clientsRef NUMERIC REFERENCES Clients (primaryKey)` <br> `);`
             - > [Photo](https://imgur.com/a/YebirZJ "Photo of table in SQLite GUI") of table `orders` in GUI
+        - [ ] Create table `Food`
+            - > `CREATE TABLE Food (` <br> `primaryKey NUMERIC PRIMARY KEY NOT NULL,` <br> `count      STRING  NOT NULL,` <br> `name       STRING  NOT NULL` <br> `);`
+            - > [Photo](https://imgur.com/a/dLAhki9 "Photo of table in SQLite GUI") of table `food` in GUI
         
     - [ ] Validating the correct display od tables in Rider
 2. [ ] Entity Framework
