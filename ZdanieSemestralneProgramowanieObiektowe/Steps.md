@@ -34,10 +34,17 @@
                     `.cd DIRECTORY          Change the working directory to DIRECTORY` <br>
                     `.quit                  Stop instance of sqlite` <br>
             - [ ] Install SQLite GUI tool
-                
-    - [ ] Check if connection is real
+                - > Download Link https://github.com/pawelsalawa/sqlitestudio/releases
+                - > Install in directory `C:\sqlite\gui`
+    - [ ] Create Database
+        - [ ] Using SQLite GUI tool
+            - > Database type `SQLite3`
+            - > Database file `C:/sqlite/database/animalShelter.db`
+            - > Database name `animalShelter`
+    - [ ] Connect SQLite with Rider
+         - > article reference https://www.jetbrains.com/help/rider/Connecting_to_a_database.html#connect-to-sqlite-database
+    - [ ] Create mind map of database
     - [ ] Create sql table structure
-        - [ ] Create database
         - [ ] Create tables
     - [ ] Validating the correct display od tables in Rider
 2. [ ] Entity Framework
