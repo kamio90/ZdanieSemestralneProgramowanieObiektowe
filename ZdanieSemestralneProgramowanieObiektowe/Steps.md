@@ -83,6 +83,8 @@
     - [ ] Validating the correct display tables in Rider
         - > [Photo](https://imgur.com/a/VlAcPI7 "Photo of display tables in Rider") of display tables in Rider
 2. [ ] Entity Framework
+    - [ ] Check what is entity framework
+        - > Documentation link https://docs.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=netcore-cli
 3. [ ] Environment
 4. [ ] Create views of application
 5. [ ] Codding application mechanics
