@@ -80,7 +80,8 @@
                 - > `PRAGMA foreign_keys = 0;` <br><br> `CREATE TABLE sqlitestudio_temp_table AS SELECT * FROM Dogs;` <br><br> `DROP TABLE Dogs;` <br><br> `CREATE TABLE Dogs (` <br> `primaryKey  INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,` <br> `dogName     STRING  NOT NULL,` <br> `dogAge      STRING  NOT NULL,` <br> `isAvailable BOOLEAN NOT NULL` <br> `);` <br><br> `INSERT INTO Dogs (` <br> `primaryKey,` <br> `dogName,` <br> `dogAge,` <br> `isAvailable` <br> `)` <br> `SELECT primaryKey,` <br> `dogName,` <br> `dogAge,` <br> `isAvailable` <br> `FROM sqlitestudio_temp_table;` <br><br> `DROP TABLE sqlitestudio_temp_table;` <br><br> `PRAGMA foreign_keys = 1;`
             - [ ] Table `clients`
                 - > `PRAGMA foreign_keys = 0;` <br><br> `CREATE TABLE sqlitestudio_temp_table AS SELECT * FROM Clients;` <br><br> `DROP TABLE Clients;` <br><br> `CREATE TABLE Clients (` <br> `primaryKey INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,` <br> `name       STRING  NOT NULL,` <br> `surname    STRING  NOT NULL,` <br> `adress     STRING  NOT NULL` <br> `);` <br><br> `INSERT INTO Clients (` <br> `primaryKey,` <br> `name,` <br> `surname,` <br> `adress` <br> `)` <br> `SELECT primaryKey,` <br> `name,` <br> `surname,` <br> `adress` <br> `FROM sqlitestudio_temp_table;` <br><br> `DROP TABLE sqlitestudio_temp_table;` <br><br> `PRAGMA foreign_keys = 1;`
-    - [ ] Validating the correct display od tables in Rider
+    - [ ] Validating the correct display tables in Rider
+        - > [Photo](https://imgur.com/a/VlAcPI7 "Photo of display tables in Rider") of display tables in Rider
 2. [ ] Entity Framework
 3. [ ] Environment
 4. [ ] Create views of application
