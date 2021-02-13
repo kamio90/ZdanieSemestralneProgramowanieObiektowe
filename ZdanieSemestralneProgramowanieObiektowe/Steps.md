@@ -85,6 +85,7 @@
 2. [ ] Entity Framework
     - [ ] Check what is entity framework
         - > Documentation link https://docs.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=netcore-cli
+    - [ ] Install entity framework by NuGet package
 3. [ ] Environment
 4. [ ] Create views of application
 5. [ ] Codding application mechanics
