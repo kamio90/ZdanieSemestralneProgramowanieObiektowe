@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="SQLite - animalShelter.db" uuid="a5cc74dd-c4a0-4ce8-be0a-483cd53101e8">
+    <data-source source="LOCAL" name="sqliteDatabase" uuid="a5cc74dd-c4a0-4ce8-be0a-483cd53101e8">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../../../../../sqlite/database/animalShelter.db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="@localhost" uuid="e59769ba-beac-4f05-88a3-dd73e2295936">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://localhost\SQLEXPRESS:1433</jdbc-url>
     </data-source>
   </component>
 </project>
