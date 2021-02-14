@@ -91,6 +91,10 @@
         - [ ] Remove .NET Core application and change it with .NET application
             - > We can't work with .NET Core and entity framework
         - [ ] Run initial setup Entity Framework using Rider 
+            - [ ] Create connection in Rider with MSSQl
+            - [ ] Create database `AnimalShelter` in Rider
+                - > `NOTE! database will be restore form sqlite becouse we can't easly work with sqlite and not core edition of entity framework`
+            - [ ] Create AnimalShelterContext script
 3. [ ] Environment
 4. [ ] Create views of application
 5. [ ] Codding application mechanics
