@@ -90,13 +90,7 @@
         - > Reference link https://blog.jetbrains.com/dotnet/2018/04/06/entity-framework-support-rider-2018-1/
         - [ ] Remove .NET Core application and change it with .NET application
             - > We can't work with .NET Core and entity framework
-        - [ ] Run initial setup Entity Framework using Rider
-    - [ ] Setup code for Entity Framework
-        - [ ] Add database directory
-            - Database directory name: `database`
-        - [ ]  Create `AnimalShelterContext` script file
-            - > Github code link `https://github.com/kamio90/ZdanieSemestralneProgramowanieObiektowe/blob/master/AnimalShelterApplication/database/AnimalShelterContext.cs`
-    - > Rider don't work with entity framework only with core change to Visual Studio
+        - [ ] Run initial setup Entity Framework using Rider 
 3. [ ] Environment
 4. [ ] Create views of application
 5. [ ] Codding application mechanics
