@@ -95,6 +95,7 @@
             - [ ] Create database `AnimalShelter` in Rider
                 - > `NOTE! database will be restore form sqlite becouse we can't easly work with sqlite and not core edition of entity framework`
             - [ ] Create AnimalShelterContext script
+            - [ ] Enable migrations in entity framework
 3. [ ] Environment
 4. [ ] Create views of application
 5. [ ] Codding application mechanics
